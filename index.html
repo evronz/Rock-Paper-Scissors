@@ -1,18 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock, Paper, Scissors</title>
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <button class="btn" id="rock">Rock</button>
-  <button class="btn" id="paper">Paper</button>
-  <button class="btn" id="Scissors">Scissors</button>
-  <div class="score-board"></div>
-  <div class="outcome"></div>
-  <div class="winner"></div>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <!-- linking external files -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header class="header">Rock, Paper, Scissors</header>
+    <div class="content-div">
+      <div>
+        <p class="rule">First to score 10 points wins the game.</p>
+      </div>
+      <div class="selection-display-container">
+        <div class="selection-display">
+          <div class="selection" id="player-selection"></div>
+          <div class="score" id="player-score">Player's Score: 0</div>
+        </div>
+        <div class="selection-display">
+          <div class="selection" id="computer-selection"></div>
+          <div class="score" id="computer-score">Computer's Score: 0</div>
+        </div>
+      </div>
+      <div class="button-container">
+        <div class="buttons">
+          <button class="btn" id="rock">Rock</button>
+          <button class="btn" id="paper">Paper</button>
+          <button class="btn" id="Scissors">Scissors</button>
+        </div>
+      </div>
+      <div class="outcome">
+      </div>
+    </div>
+    <footer>
+      <div class="creator">
+        Created by <a href="https://github.com/evronz" target="_blank">evronz</a>
+      </div>
+    </footer>
+    <div id="modal">
+      <div class="result-container">
+        <div class="winner"></div>
+        <div class="game-over">Game Over!</div>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+  </body>
+  </html>

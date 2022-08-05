@@ -32,15 +32,15 @@ body {
   margin-top: 20px;
 }
 
-.choices-display-div {
+.selection-display-container {
   width: 400px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
-.choice-display {
+.selection-display {
   width: 180px;
   height: 200px;
   display: grid;
@@ -48,15 +48,17 @@ body {
   text-align: center;
 }
 
-.choice {
+.selection {
   background-color: lightpink;
+  border-radius: 10px 10px 0 0;
 }
 
 .score {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 8px;
   font-size: 20px;
   background-color: lightblue;
+  border-radius: 0 0 10px 10px;
 }
 
 .button-container {
@@ -98,14 +100,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 35px;
   border-radius: 8px;
 }
 
 .outcome-text {
-  font-size: 20px;
+  font-size: 22px;
   color: #F1F1F1;
   display: inline-block;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
 }
 
 footer {
@@ -121,7 +125,7 @@ footer {
   color: #100F0F;
 }
 
-/* .modal {
+.modal {
   background-color: rgba(0,0,0,0.7);
   position: fixed;
   top: 0px;
@@ -136,7 +140,7 @@ footer {
 
 .result-container {
   background-color: lightpink;
-  padding: 60px 80px;
+  padding: 40px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,6 +152,12 @@ footer {
 .winner {
   font-size: 30px;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 12px;
+}
+
+.game-over {
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -155,8 +165,8 @@ footer {
   font-size: 18px;
   background-color: lightblue;
   border: none;
-  padding: 10px 40px;
-  border-radius: 20px;
+  padding: 15px 45px;
+  border-radius: 26px;
   transition: transform 0.15s box-shadow 0.15s;
 }
 
@@ -167,4 +177,4 @@ footer {
 .play-again:active {
   transform: translate(3px, 3px);
   box-shadow: 2px 2px 10px rgb(56, 56, 56);
-} */
+}
